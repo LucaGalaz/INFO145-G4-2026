@@ -1,7 +1,7 @@
 # Proyecto INFO145 - Grupo 4
 
 ## Instrucciones de Compilacion
-El codigo es compatible con Linux y Windows, requiriendo el set de compiladores GCC (g++) con soporte para el estandar C++17.
+El codigo es compatible con Linux y Windows, requiriendo el compilador g++ con soporte para el estandar C++17.
 
 ### En Linux
 Abra la terminal en la carpeta raiz del proyecto y ejecute:
