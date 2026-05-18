@@ -182,7 +182,7 @@ int main(int argc, char* argv[]) {
     string arg1 = argv[1];
     if (arg1 == "--benchmark") {
         ejecutarBenchmark();
-    } else if ((arg1 == "i" || arg1 == "-i") && argc == 3) {
+    } else if (arg1 == "-i" && argc == 3) {
         ejecutarModoArchivo(argv[2]);
     } else {
         cout << "Parametros no validos.\n";
