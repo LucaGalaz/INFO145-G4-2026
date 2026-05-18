@@ -133,7 +133,7 @@ void ejecutarModoArchivo(const string& ruta) {
         cout << " 1. Caso 1 (Representacion Explicita)\n";
         cout << " 2. Caso 2 (Gap-Coding)\n";
         cout << " 3. Caso 3 (Compresion con Elias Gamma y Delta)\n";
-        cout << "Escriba opcion 1 a 3: ";
+        cout << "Escriba opcion: ";
         if (!(cin >> opcion)) break;
 
         int64_t pos = -1;
@@ -148,7 +148,7 @@ void ejecutarModoArchivo(const string& ruta) {
             cout << "\nSeleccione tipo de compresion:\n";
             cout << " 1. Elias Gamma\n";
             cout << " 2. Elias Delta\n";
-            cout << "Seleccione opcion 1 o 2: ";
+            cout << "Seleccione opcion: ";
             if (!(cin >> sub_opc)) break;
             
             if (sub_opc == 1) pos = busquedaEliasGamma(c3g, valor);
@@ -163,9 +163,9 @@ void ejecutarModoArchivo(const string& ruta) {
         duration<double, milli> tiempo = end - start;
 
         if (pos != -1) {
-            cout << "ENCONTRADO en indice: " << pos << " | Tiempo: " << tiempo.count() << " ms\n";
+            cout << "Encontrado en indice: " << pos << " | Tiempo: " << tiempo.count() << " ms\n";
         } else {
-            cout << "NO ENCONTRADO en la estructura. | Tiempo: " << tiempo.count() << " ms\n";
+            cout << "No encontrado en la estructura. | Tiempo: " << tiempo.count() << " ms\n";
         }
     }
 }
