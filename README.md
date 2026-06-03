@@ -32,3 +32,6 @@ Para cargar su propio archivo CSV con numeros separados por comas e interactuar 
 
 * Argumentos recibidos: `-i` seguido por la ruta del archivo.
 * Salida producida: Despliega un menu interactivo en la consola que pide un valor a buscar y muestra su indice real junto con los milisegundos que tomo encontrarlo.
+
+## Rango de Numeros
+El programa trabaja utilizando enteros sin signo de 64 bits (uint64_t). Para la conversion de los datos leidos desde el archivo CSV, el programa utiliza la funcion atoll.

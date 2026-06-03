@@ -108,7 +108,7 @@ void ejecutarModoArchivo(const string& ruta) {
     string aux_str;
     while (getline(archivo, aux_str, ',')) {
         if (!aux_str.empty()) {
-            datos.push_back(stoull(aux_str)); 
+            datos.push_back(atoll(aux_str.c_str())); 
         }
     }
     archivo.close();
