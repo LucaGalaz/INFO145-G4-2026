@@ -1,8 +1,4 @@
-# ===================================================
-# Gitignore personalizado - INFO145 - Grupo 4
-# ===================================================
-
-# Ejecutables nativos de Windows y Linux (No se suben al repo)
+# Ejecutables
 main
 main.exe
 
@@ -10,19 +6,18 @@ main.exe
 *.o
 *.obj
 
-# Resultados de las pruebas de rendimiento (Métricas locales)
-# Esto ignora los .csv pero mantiene la carpeta 'resultados' visible en Git
+# Resultados
 resultados/*.csv
 *.csv
 
-# Archivos de volcado de memoria de Valgrind (Sugerido en el enunciado)
+# Archivos de volcado de memoria de Valgrind
 vgcore.*
 
 # Configuraciones locales de Visual Studio Code
 .vscode/
 .history/
 
-# Archivos ocultos del sistema operativo (Windows / macOS)
+# Archivos ocultos del sistema operativo
 Thumbs.db
 Desktop.ini
 .DS_Store
